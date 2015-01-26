@@ -17,9 +17,11 @@
 #
 #       This function "cacheSolve" as implemented here ensures that:
 #               - Function handles the presence of optional arguments by recalculating the inverse and updating the cache, if the number of arguments change from one function call to the next   
-#               - The input provided is an invertible matrix    ##Optional check
-#               - 
+#               - If the number of arguments is not identical with the previous function call (if any) we recalculate the matrix inverse
+#               - If the number of arguments is more than one (even if the number of arguments are same as the previous function call), we still need to recalculate inverse including both the cache matrix and the optional arguments
 # 
+#
+#
 # Following inline comments describe how the pieces of code work. 
 #
 #
